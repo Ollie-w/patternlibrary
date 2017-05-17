@@ -1,0 +1,166 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+    --button-bg: transparent;
+}
+
+body {
+    font-family: HelveticaNeue, helvetica, arial;
+    background-color: rgb(240, 245, 245);
+    color: rgb(15, 15, 15);
+}
+
+body, br, li, dt, dd, th, td, option {
+  margin-top: 0;
+}
+
+* {
+  font-family: inherit;
+  line-height: inherit;
+  color: inherit;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+}
+
+hr {
+    	height: 10px;
+	border: 0;
+	box-shadow: 0 10px 10px -10px #8c8b8b inset;
+}
+
+code {
+    overflow: auto;
+    margin-top: 10px;
+}
+
+.wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+h2:before {
+    content: '';
+    width: 5rem;
+    height: .3rem;
+    display: block;
+    background-color: #5596e6;
+    position: absolute;
+    top: -.5rem;
+    left: 0;
+}
+
+h2, h3 {
+    position: relative;
+    color: black;
+     font-weight: 600;
+}
+
+h1 {
+    margin-top: 30px;
+}
+
+h2 {
+    font-size: 26px;
+    margin-top: 28px;
+}
+
+h3 {
+    font-size: 24px;
+    margin-top: 26px;
+}
+
+p {
+    margin-top: 10px;
+}
+
+.color-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+
+.button-grid {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
+}
+
+.color-grid {
+    margin-top: 25px;
+}
+
+.button-grid {
+    margin-top: 40px;
+}
+
+.button-grid button {
+    background-color: var(--button-bg);
+    align-self: center;
+    justify-self: center;
+}
+
+button:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+}
+
+.info {
+    cursor: help;
+}
+
+.color p {
+    margin-left: 10px;
+}
+
+.color {
+    background-color: white;
+    border-radius: 10px;
+    padding-bottom: 10px;
+}
+
+.color-swatch {
+    height: 80px;
+    border-radius: 10px 10px 0 0;
+}
+
+.button-background-select div:first-child .color-swatch {
+    background-color: pink;
+}
+
+.button-background-select div:nth-child(2) .color-swatch {
+    background-color: blue;
+}
+
+.button-background-select div:nth-child(3) .color-swatch {
+    background-color: red;
+}
+
+.button-background-select div:nth-child(4) .color-swatch {
+    background-color: yellow;
+}
+
+.button-background-select div:nth-child(5) .color-swatch {
+    background-color: aqua;
+}
