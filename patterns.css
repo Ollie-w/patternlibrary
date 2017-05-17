@@ -15,6 +15,10 @@ time, mark, audio, video {
 	padding: 0;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 :root {
     --button-bg: transparent;
 }
@@ -91,6 +95,41 @@ h3 {
 
 p {
     margin-top: 10px;
+}
+
+.flex-container {
+    display: flex;
+    width: 250px;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.font-weight {
+    background-color: white;
+    color: black;
+    display: inline-block;
+    text-align: center;
+    border: solid black;
+}
+
+.font-weight p {
+    padding: 15px;
+}
+
+.font-weight p:first-child {
+    font-size: 55px;
+}
+
+.font-weight p:nth-child(2) {
+    background-color: black;
+    color: white;
+}
+
+.bold {
+    font-weight: 900;
+}
+.normal {
+    font-weight: 100;
 }
 
 .color-grid {
